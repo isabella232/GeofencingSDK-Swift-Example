@@ -2,7 +2,7 @@ use_frameworks!
 platform :ios, '10.0'
 
 target 'AirMapGeofencingSDK-iOS' do
-  pod 'AirMapGeofencingSDK', :git => 'https://github.com/airmap/AirMapGeofencingSDK-Swift-Host'
+  pod 'AirMapGeofencingSDK', :podspec => '../AirMapGeofencingSDK.podspec'
 	pod 'AirMapSDK', :git => 'https://github.com/airmap/airmapsdk-swift'
 	pod 'SwiftLint'
 end

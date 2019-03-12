@@ -1,5 +1,5 @@
 PODS:
-  - AirMapGeofencingSDK (0.9.0-alpha.6):
+  - AirMapGeofencingSDK (0.1.0.beta.1):
     - RxCocoa
     - RxSwift
     - Turf
@@ -47,15 +47,15 @@ PODS:
   - PhoneNumberKit/UIKit (2.6.0):
     - PhoneNumberKit/PhoneNumberKitCore
   - ProtocolBuffers-Swift (4.0.6)
-  - RxAtomic (4.4.1)
-  - RxCocoa (4.4.1):
-    - RxSwift (~> 4.0)
+  - RxAtomic (4.4.2)
+  - RxCocoa (4.4.2):
+    - RxSwift (>= 4.4.2, ~> 4.4)
   - RxDataSources (3.1.0):
     - Differentiator (~> 3.0)
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
-  - RxSwift (4.4.1):
-    - RxAtomic (~> 4.4)
+  - RxSwift (4.4.2):
+    - RxAtomic (>= 4.4.2, ~> 4.4)
   - RxSwiftExt (3.4.0):
     - RxSwiftExt/Core (= 3.4.0)
     - RxSwiftExt/RxCocoa (= 3.4.0)
@@ -70,7 +70,7 @@ PODS:
   - Turf (0.3.0)
 
 DEPENDENCIES:
-  - AirMapGeofencingSDK (from `https://github.com/airmap/AirMapGeofencingSDK-Swift-Host`)
+  - AirMapGeofencingSDK (from `../AirMapGeofencingSDK.podspec`)
   - AirMapSDK (from `https://github.com/airmap/airmapsdk-swift`)
   - SwiftLint
 
@@ -99,20 +99,17 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   AirMapGeofencingSDK:
-    :git: https://github.com/airmap/AirMapGeofencingSDK-Swift-Host
+    :podspec: "../AirMapGeofencingSDK.podspec"
   AirMapSDK:
     :git: https://github.com/airmap/airmapsdk-swift
 
 CHECKOUT OPTIONS:
-  AirMapGeofencingSDK:
-    :commit: 375760bf504cdb7edff21fdc98e04f85db1b1516
-    :git: https://github.com/airmap/AirMapGeofencingSDK-Swift-Host
   AirMapSDK:
     :commit: 4bcdb9f1c38885da3d660b1c4010c197a6e696d6
     :git: https://github.com/airmap/airmapsdk-swift
 
 SPEC CHECKSUMS:
-  AirMapGeofencingSDK: 04af1d7e15776323a709235e9806b39e95842ebe
+  AirMapGeofencingSDK: 61c2142e5c15ef58e6a7dfbdf96f4992a57ebf8a
   AirMapSDK: 5887c9c3e808e901c34bc4b460f90c168eb666d5
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   AppAuth: 137f6bb6fc9dfbaf2cf9f6fcff1d336ff0163bc6
@@ -125,16 +122,16 @@ SPEC CHECKSUMS:
   ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
   PhoneNumberKit: 167ee1f0bbb6efce7c62559e620eae745595532f
   ProtocolBuffers-Swift: 09b5cfcc641ab512d6aaa1d2cc3879a40432052c
-  RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
-  RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
+  RxAtomic: d00e97c10db88c6f08540e0bf2752fc5a2404167
+  RxCocoa: 477990dc3b4c3ff55fb0ac77e1cc06244e0aaec8
   RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
-  RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
+  RxSwift: 74c29b693c8e42b0f64400e8b06564575742d649
   RxSwiftExt: 01f8ecbeeb355698e9c75365ebe908b00dacf45d
   SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
   SwiftMQTT: acd344613d39c0371de62f9f494e129ca14da9d1
   SwiftTurf: 340da9dbf60fe7ded0cac158657ec463269d581c
   Turf: c6bdf62d6a70c647874f295dd1cf4eefc0c3e9e6
 
-PODFILE CHECKSUM: bef2b437f2661a35f2ec09490b20c8e275d99349
+PODFILE CHECKSUM: d1dc64c3ff7519c61c031a3c318dde4b432e160f
 
 COCOAPODS: 1.6.1
