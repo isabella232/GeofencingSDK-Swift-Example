@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C6C4CFB2232CAE90071F08B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6C4CEC2232CAE90071F08B /* ViewController.swift */; };
+		4C6C4CFC2232CAE90071F08B /* AirspaceMapSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6C4CED2232CAE90071F08B /* AirspaceMapSource.swift */; };
+		4C6C4CFD2232CAE90071F08B /* FlightSimulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6C4CEE2232CAE90071F08B /* FlightSimulator.swift */; };
+		4C6C4CFE2232CAE90071F08B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C6C4CEF2232CAE90071F08B /* Assets.xcassets */; };
+		4C6C4CFF2232CAE90071F08B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6C4CF02232CAE90071F08B /* LaunchScreen.storyboard */; };
+		4C6C4D002232CAE90071F08B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6C4CF22232CAE90071F08B /* Main.storyboard */; };
+		4C6C4D012232CAE90071F08B /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6C4CF42232CAE90071F08B /* SwipeView.swift */; };
+		4C6C4D022232CAE90071F08B /* StatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6C4CF52232CAE90071F08B /* StatusCell.swift */; };
+		4C6C4D032232CAE90071F08B /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6C4CF62232CAE90071F08B /* StatusViewController.swift */; };
+		4C6C4D042232CAE90071F08B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6C4CF72232CAE90071F08B /* AppDelegate.swift */; };
+		4C6C4D062232CAE90071F08B /* AircraftAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6C4CF92232CAE90071F08B /* AircraftAnnotation.swift */; };
+		4C6C4D072232CAE90071F08B /* MapboxAirspaceObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6C4CFA2232CAE90071F08B /* MapboxAirspaceObject.swift */; };
+		4C6C4D092232D0F10071F08B /* airmap.config.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C6C4D082232D0F10071F08B /* airmap.config.json */; };
+		4C6C4D0C2232D1280071F08B /* aircraftPath.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C6C4D0B2232D1280071F08B /* aircraftPath.json */; };
+		4C6C4D1D2232D3F40071F08B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4C6C4D1A2232D3F40071F08B /* README.md */; };
+		4C6C4D1E2232D3F40071F08B /* AirMapGeofencingSDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 4C6C4D1B2232D3F40071F08B /* AirMapGeofencingSDK.podspec */; };
+		4C6C4D1F2232D3F40071F08B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4C6C4D1C2232D3F40071F08B /* LICENSE */; };
+		68CB258E05EE7BF36A77EE05 /* Pods_AirMapGeofencingSDK_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90968D155FAC92EDD15329FF /* Pods_AirMapGeofencingSDK_iOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A0EDBDD419CF242C87B22F5 /* Pods-AirMapGeofencingSDK-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirMapGeofencingSDK-iOS.release.xcconfig"; path = "Target Support Files/Pods-AirMapGeofencingSDK-iOS/Pods-AirMapGeofencingSDK-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		3DE5ABD3AE847CA9F94982E6 /* Pods-AirMapGeofencingSDK-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirMapGeofencingSDK-iOS.debug.xcconfig"; path = "Target Support Files/Pods-AirMapGeofencingSDK-iOS/Pods-AirMapGeofencingSDK-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4C6C4CD62232C9B90071F08B /* AirMapGeofencingSDK-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AirMapGeofencingSDK-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C6C4CEC2232CAE90071F08B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C6C4CED2232CAE90071F08B /* AirspaceMapSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirspaceMapSource.swift; sourceTree = "<group>"; };
+		4C6C4CEE2232CAE90071F08B /* FlightSimulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightSimulator.swift; sourceTree = "<group>"; };
+		4C6C4CEF2232CAE90071F08B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C6C4CF12232CAE90071F08B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C6C4CF32232CAE90071F08B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C6C4CF42232CAE90071F08B /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		4C6C4CF52232CAE90071F08B /* StatusCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusCell.swift; sourceTree = "<group>"; };
+		4C6C4CF62232CAE90071F08B /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		4C6C4CF72232CAE90071F08B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C6C4CF82232CAE90071F08B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C6C4CF92232CAE90071F08B /* AircraftAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AircraftAnnotation.swift; sourceTree = "<group>"; };
+		4C6C4CFA2232CAE90071F08B /* MapboxAirspaceObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxAirspaceObject.swift; sourceTree = "<group>"; };
+		4C6C4D082232D0F10071F08B /* airmap.config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airmap.config.json; sourceTree = "<group>"; };
+		4C6C4D0B2232D1280071F08B /* aircraftPath.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = aircraftPath.json; sourceTree = "<group>"; };
+		4C6C4D1A2232D3F40071F08B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		4C6C4D1B2232D3F40071F08B /* AirMapGeofencingSDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AirMapGeofencingSDK.podspec; path = ../../AirMapGeofencingSDK.podspec; sourceTree = "<group>"; };
+		4C6C4D1C2232D3F40071F08B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
+		90968D155FAC92EDD15329FF /* Pods_AirMapGeofencingSDK_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirMapGeofencingSDK_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C6C4CD32232C9B90071F08B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CB258E05EE7BF36A77EE05 /* Pods_AirMapGeofencingSDK_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C6C4CCD2232C9B90071F08B = {
+			isa = PBXGroup;
+			children = (
+				4C6C4D082232D0F10071F08B /* airmap.config.json */,
+				4C6C4CEB2232CAE90071F08B /* iOS */,
+				4C6C4D192232D3E00071F08B /* Podspec Metadata */,
+				4C6C4D0A2232D1280071F08B /* Data */,
+				4C6C4CD72232C9B90071F08B /* Products */,
+				AD1BAD4ACD01AB0924A483FA /* Pods */,
+				EAC45C21448A0E47FFA741E8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C6C4CD72232C9B90071F08B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C6C4CD62232C9B90071F08B /* AirMapGeofencingSDK-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C6C4CEB2232CAE90071F08B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4C6C4D0F2232D3040071F08B /* Geofencing */,
+				4C6C4CF72232CAE90071F08B /* AppDelegate.swift */,
+				4C6C4CF92232CAE90071F08B /* AircraftAnnotation.swift */,
+				4C6C4CEE2232CAE90071F08B /* FlightSimulator.swift */,
+				4C6C4CF42232CAE90071F08B /* SwipeView.swift */,
+				4C6C4CF52232CAE90071F08B /* StatusCell.swift */,
+				4C6C4CF62232CAE90071F08B /* StatusViewController.swift */,
+				4C6C4CEC2232CAE90071F08B /* ViewController.swift */,
+				4C6C4CF22232CAE90071F08B /* Main.storyboard */,
+				4C6C4CEF2232CAE90071F08B /* Assets.xcassets */,
+				4C6C4CF02232CAE90071F08B /* LaunchScreen.storyboard */,
+				4C6C4CF82232CAE90071F08B /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		4C6C4D0A2232D1280071F08B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4C6C4D0B2232D1280071F08B /* aircraftPath.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4C6C4D0F2232D3040071F08B /* Geofencing */ = {
+			isa = PBXGroup;
+			children = (
+				4C6C4CED2232CAE90071F08B /* AirspaceMapSource.swift */,
+				4C6C4CFA2232CAE90071F08B /* MapboxAirspaceObject.swift */,
+			);
+			path = Geofencing;
+			sourceTree = "<group>";
+		};
+		4C6C4D192232D3E00071F08B /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				4C6C4D1B2232D3F40071F08B /* AirMapGeofencingSDK.podspec */,
+				4C6C4D1C2232D3F40071F08B /* LICENSE */,
+				4C6C4D1A2232D3F40071F08B /* README.md */,
+			);
+			path = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		AD1BAD4ACD01AB0924A483FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DE5ABD3AE847CA9F94982E6 /* Pods-AirMapGeofencingSDK-iOS.debug.xcconfig */,
+				0A0EDBDD419CF242C87B22F5 /* Pods-AirMapGeofencingSDK-iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EAC45C21448A0E47FFA741E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90968D155FAC92EDD15329FF /* Pods_AirMapGeofencingSDK_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C6C4CD52232C9B90071F08B /* AirMapGeofencingSDK-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C6C4CE82232C9B90071F08B /* Build configuration list for PBXNativeTarget "AirMapGeofencingSDK-iOS" */;
+			buildPhases = (
+				E22F20F9783D6EBFD7058DF5 /* [CP] Check Pods Manifest.lock */,
+				4C6C4CD22232C9B90071F08B /* Sources */,
+				4C6C4CD32232C9B90071F08B /* Frameworks */,
+				4C6C4CD42232C9B90071F08B /* Resources */,
+				7F5C314B51EDE3E55AC10F0D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AirMapGeofencingSDK-iOS";
+			productName = AirMapGeofencingSDK;
+			productReference = 4C6C4CD62232C9B90071F08B /* AirMapGeofencingSDK-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C6C4CCE2232C9B90071F08B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = AirMap;
+				TargetAttributes = {
+					4C6C4CD52232C9B90071F08B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 4C6C4CD12232C9B90071F08B /* Build configuration list for PBXProject "AirMapGeofencingSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C6C4CCD2232C9B90071F08B;
+			productRefGroup = 4C6C4CD72232C9B90071F08B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C6C4CD52232C9B90071F08B /* AirMapGeofencingSDK-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C6C4CD42232C9B90071F08B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C6C4D1E2232D3F40071F08B /* AirMapGeofencingSDK.podspec in Resources */,
+				4C6C4D0C2232D1280071F08B /* aircraftPath.json in Resources */,
+				4C6C4D002232CAE90071F08B /* Main.storyboard in Resources */,
+				4C6C4D1D2232D3F40071F08B /* README.md in Resources */,
+				4C6C4CFE2232CAE90071F08B /* Assets.xcassets in Resources */,
+				4C6C4D1F2232D3F40071F08B /* LICENSE in Resources */,
+				4C6C4D092232D0F10071F08B /* airmap.config.json in Resources */,
+				4C6C4CFF2232CAE90071F08B /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F5C314B51EDE3E55AC10F0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AirMapGeofencingSDK-iOS/Pods-AirMapGeofencingSDK-iOS-frameworks.sh",
+				"${PODS_ROOT}/AirMapGeofencingSDK/Carthage/Build/iOS/AirMapGeofencing.framework",
+				"${PODS_ROOT}/AirMapGeofencingSDK/Carthage/Build/iOS/AirMapGeofencing.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/AirMapSDK/AirMap.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/Log/Log.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PhoneNumberKit/PhoneNumberKit.framework",
+				"${BUILT_PRODUCTS_DIR}/ProtocolBuffers-Swift/ProtocolBuffers.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMQTT/SwiftMQTT.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftTurf/SwiftTurf.framework",
+				"${BUILT_PRODUCTS_DIR}/Turf/Turf.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AirMapGeofencing.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/AirMapGeofencing.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AirMap.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Log.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PhoneNumberKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtocolBuffers.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMQTT.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftTurf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Turf.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AirMapGeofencingSDK-iOS/Pods-AirMapGeofencingSDK-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E22F20F9783D6EBFD7058DF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AirMapGeofencingSDK-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C6C4CD22232C9B90071F08B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C6C4D022232CAE90071F08B /* StatusCell.swift in Sources */,
+				4C6C4CFB2232CAE90071F08B /* ViewController.swift in Sources */,
+				4C6C4D062232CAE90071F08B /* AircraftAnnotation.swift in Sources */,
+				4C6C4D012232CAE90071F08B /* SwipeView.swift in Sources */,
+				4C6C4CFD2232CAE90071F08B /* FlightSimulator.swift in Sources */,
+				4C6C4D042232CAE90071F08B /* AppDelegate.swift in Sources */,
+				4C6C4D072232CAE90071F08B /* MapboxAirspaceObject.swift in Sources */,
+				4C6C4D032232CAE90071F08B /* StatusViewController.swift in Sources */,
+				4C6C4CFC2232CAE90071F08B /* AirspaceMapSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4C6C4CF02232CAE90071F08B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C6C4CF12232CAE90071F08B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4C6C4CF22232CAE90071F08B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C6C4CF32232CAE90071F08B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C6C4CE62232C9B90071F08B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C6C4CE72232C9B90071F08B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C6C4CE92232C9B90071F08B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DE5ABD3AE847CA9F94982E6 /* Pods-AirMapGeofencingSDK-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P9UW98328;
+				INFOPLIST_FILE = "$(SRCROOT)/iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.airmap.AirMapGeofencingSDK-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C6C4CEA2232C9B90071F08B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A0EDBDD419CF242C87B22F5 /* Pods-AirMapGeofencingSDK-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P9UW98328;
+				INFOPLIST_FILE = "$(SRCROOT)/iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.airmap.AirMapGeofencingSDK-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C6C4CD12232C9B90071F08B /* Build configuration list for PBXProject "AirMapGeofencingSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C6C4CE62232C9B90071F08B /* Debug */,
+				4C6C4CE72232C9B90071F08B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C6C4CE82232C9B90071F08B /* Build configuration list for PBXNativeTarget "AirMapGeofencingSDK-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C6C4CE92232C9B90071F08B /* Debug */,
+				4C6C4CEA2232C9B90071F08B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C6C4CCE2232C9B90071F08B /* Project object */;
+}

@@ -1,0 +1,140 @@
+PODS:
+  - AirMapGeofencingSDK (0.9.0-alpha.6):
+    - RxCocoa
+    - RxSwift
+    - Turf
+  - AirMapSDK (3.0.0.beta.1):
+    - AirMapSDK/Core (= 3.0.0.beta.1)
+    - AirMapSDK/Telemetry (= 3.0.0.beta.1)
+    - AirMapSDK/Traffic (= 3.0.0.beta.1)
+    - AirMapSDK/UI (= 3.0.0.beta.1)
+  - AirMapSDK/Core (3.0.0.beta.1):
+    - Alamofire
+    - KeychainAccess
+    - Log
+    - ObjectMapper
+    - RxCocoa
+    - RxSwift
+    - RxSwiftExt
+    - SwiftTurf
+  - AirMapSDK/Telemetry (3.0.0.beta.1):
+    - AirMapSDK/Core
+    - CocoaAsyncSocket
+    - CryptoSwift (~> 0.10.0)
+    - ProtocolBuffers-Swift (~> 4.0.6)
+  - AirMapSDK/Traffic (3.0.0.beta.1):
+    - AirMapSDK/Core
+    - SwiftMQTT (~> 3.0)
+  - AirMapSDK/UI (3.0.0.beta.1):
+    - AirMapSDK/Core
+    - AppAuth
+    - Mapbox-iOS-SDK (< 4.0)
+    - PhoneNumberKit
+    - RxDataSources
+  - Alamofire (4.8.1)
+  - AppAuth (0.95.0)
+  - CocoaAsyncSocket (7.6.3)
+  - CryptoSwift (0.10.0)
+  - Differentiator (3.1.0)
+  - KeychainAccess (3.1.2)
+  - Log (1.0)
+  - Mapbox-iOS-SDK (3.7.8)
+  - ObjectMapper (3.4.2)
+  - PhoneNumberKit (2.6.0):
+    - PhoneNumberKit/PhoneNumberKitCore (= 2.6.0)
+    - PhoneNumberKit/UIKit (= 2.6.0)
+  - PhoneNumberKit/PhoneNumberKitCore (2.6.0)
+  - PhoneNumberKit/UIKit (2.6.0):
+    - PhoneNumberKit/PhoneNumberKitCore
+  - ProtocolBuffers-Swift (4.0.6)
+  - RxAtomic (4.4.1)
+  - RxCocoa (4.4.1):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.1.0):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.4.1):
+    - RxAtomic (~> 4.4)
+  - RxSwiftExt (3.4.0):
+    - RxSwiftExt/Core (= 3.4.0)
+    - RxSwiftExt/RxCocoa (= 3.4.0)
+  - RxSwiftExt/Core (3.4.0):
+    - RxSwift (~> 4.0)
+  - RxSwiftExt/RxCocoa (3.4.0):
+    - RxCocoa (~> 4.0)
+    - RxSwiftExt/Core
+  - SwiftLint (0.31.0)
+  - SwiftMQTT (3.0.0)
+  - SwiftTurf (0.3.3)
+  - Turf (0.3.0)
+
+DEPENDENCIES:
+  - AirMapGeofencingSDK (from `https://github.com/airmap/AirMapGeofencingSDK-Swift-Host`)
+  - AirMapSDK (from `https://github.com/airmap/airmapsdk-swift`)
+  - SwiftLint
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AppAuth
+    - CocoaAsyncSocket
+    - CryptoSwift
+    - Differentiator
+    - KeychainAccess
+    - Log
+    - Mapbox-iOS-SDK
+    - ObjectMapper
+    - PhoneNumberKit
+    - ProtocolBuffers-Swift
+    - RxAtomic
+    - RxCocoa
+    - RxDataSources
+    - RxSwift
+    - RxSwiftExt
+    - SwiftLint
+    - SwiftMQTT
+    - SwiftTurf
+    - Turf
+
+EXTERNAL SOURCES:
+  AirMapGeofencingSDK:
+    :git: https://github.com/airmap/AirMapGeofencingSDK-Swift-Host
+  AirMapSDK:
+    :git: https://github.com/airmap/airmapsdk-swift
+
+CHECKOUT OPTIONS:
+  AirMapGeofencingSDK:
+    :commit: 375760bf504cdb7edff21fdc98e04f85db1b1516
+    :git: https://github.com/airmap/AirMapGeofencingSDK-Swift-Host
+  AirMapSDK:
+    :commit: 4bcdb9f1c38885da3d660b1c4010c197a6e696d6
+    :git: https://github.com/airmap/airmapsdk-swift
+
+SPEC CHECKSUMS:
+  AirMapGeofencingSDK: 04af1d7e15776323a709235e9806b39e95842ebe
+  AirMapSDK: 5887c9c3e808e901c34bc4b460f90c168eb666d5
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  AppAuth: 137f6bb6fc9dfbaf2cf9f6fcff1d336ff0163bc6
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  CryptoSwift: 6c778d69282bed3b4e975ff97a79d074f20bb011
+  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
+  KeychainAccess: b3816fddcf28aa29d94b10ec305cd52be14c472b
+  Log: 5e368c9528db07517d18d2d04ff5fe2b6f5a1e21
+  Mapbox-iOS-SDK: a8b55533ef5c5e91b5a26533bd4fb0ec88a3b994
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  PhoneNumberKit: 167ee1f0bbb6efce7c62559e620eae745595532f
+  ProtocolBuffers-Swift: 09b5cfcc641ab512d6aaa1d2cc3879a40432052c
+  RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
+  RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
+  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
+  RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
+  RxSwiftExt: 01f8ecbeeb355698e9c75365ebe908b00dacf45d
+  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
+  SwiftMQTT: acd344613d39c0371de62f9f494e129ca14da9d1
+  SwiftTurf: 340da9dbf60fe7ded0cac158657ec463269d581c
+  Turf: c6bdf62d6a70c647874f295dd1cf4eefc0c3e9e6
+
+PODFILE CHECKSUM: bef2b437f2661a35f2ec09490b20c8e275d99349
+
+COCOAPODS: 1.6.1

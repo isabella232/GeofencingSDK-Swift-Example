@@ -10,18 +10,19 @@ The AirMap Geofencing SDK enables your application to receive real-time alerts a
 
 #### CocoaPods
 
-Requires CocoaPods 1.6.0+
+Requires CocoaPods 1.5.3+
 
 The Geofencing SDK is a CocoaPod written in Swift. CocoaPods is a dependency manager for Cocoa projects. If you don't have CocoaPods, You can install it with the following command:
 
 `$ sudo gem install cocoapods`
 
-To integrate the Geofencing SDK into your Xcode project, navigate to the directory that contains your project and create a new **Podfile** with `pod init` or open an existing one, then add `pod 'AirMapGeofencingSDK'` to the main target. Make sure to add the line `use_frameworks!`.
+To integrate the Geofencing SDK into your Xcode project, navigate to the directory that contains your project and create a new **Podfile** with `pod init` or open an existing one, then add 
+`pod 'AirMapGeofencingSDK', :git => 'https://github.com/airmap/GeofencingSDK-Swift-Example'` to the main target. Make sure to add the line `use_frameworks!`.
 
 ```ruby
 target 'MyApp' do
   use_frameworks!
-  pod 'AirMapGeofencingSDK', :git => 'https://github.com/airmap/AirMapGeofencingSDK-Swift-Host'
+  pod 'AirMapGeofencingSDK', :git => 'https://github.com/airmap/GeofencingSDK-Swift-Example'
 end
 ```
 
@@ -32,7 +33,7 @@ Then, run the following command to install the dependencies:
 ### Importing
 
 ```swift
-import AirMapGeofencingSDK
+import AirMapGeofencing
 ```
 
 When parsing or using any of the of the geometry features (`PolygonFeature, MultiPolygonFeature, etc`) you must also import `Turf`
@@ -87,8 +88,6 @@ Each time the Geofencing Service runs, it will return a list of statuses. One fo
         APPROACHING,    // The aircraft is approaching (within 30 seconds of intersecting) the airspace 
         ENTERING,       // The aircraft is entering (within 10 seconds of intersecting) the airspace
         INTERSECTING,   // The aircraft is intersecting the airspace
-        LEAVING,        // The aircraft is leaving (within 10 seconds) the airspace (Geocage)
-        DEVIATED,       // The aircraft has left the airspace (Geocage)
         UNAVAILABLE     // The Geofencing service was unable to calculate a status due to lack of information (missing aircraft's telemetry or airspace info)
         
 If the status level is approaching or entering, the status will include proximity data. The proximity data includes a timeTo (seconds) & distanceTo (meters), which indicates when the aircraft will intersect the airspace given its current course and speed. 
@@ -109,6 +108,9 @@ If the status level is approaching or entering, the status will include proximit
 
 An API Key can be obtained from our [Developer Portal](https://dashboard.airmap.io/developer).
 
+## Terms of Service
+
+By using this SDK, you are agreeing to the [AirMap Developer Terms & Conditions](https://www.airmap.com/developer-terms-service/)
 
 ## License
 
@@ -116,9 +118,11 @@ The Geofencing SDK is linked with unmodified libraries of <a href=https://github
 
 ## Troubleshooting
 
-If you deleted the AirMapGeofencingSDK pod and are trying to reinstall it but it is not appearing you may need to delete your local Cocoapods cache.
+If you deleted the AirMapGeofencingSDK pod and are trying to reinstall it but the framework is not appearing you may need to delete your AirMapGeofencingSDK CocoaPods cache.
 
-`rm -rf "${HOME}/Library/Caches/CocoaPods/AirMapGeofencingSDK"`
+`pod cache clean 'AirMapGeofencingSDK' --all`
+
+If you are installing from a local reference to the podspec you must have the vendored framework downloaded and unzipped to the corresponding path used in `s.ios.vendored_frameworks`.
 
 ## Support
 
