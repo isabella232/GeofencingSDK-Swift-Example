@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.summary           = 'A simple pod to deliver the AirMapGeofencingSDK Framework.'
   s.description       = 'This pod contains the AirMapGeofencingSDK Framework and installs it for easy use'
   s.homepage          = 'https://github.com/airmap/GeofencingSDK-Swift-Example'
-  s.license           = { :type => 'Apache License, Version 2.0', :file => 'LICENSE' }
+  s.license           = { :type => 'Apache License, Version 2.0' }
   s.social_media_url  = 'https://twitter.com/AirMapIO'
 
   s.source = {
