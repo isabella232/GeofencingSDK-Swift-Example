@@ -10,7 +10,7 @@ The AirMap Geofencing SDK enables your application to receive real-time alerts a
 
 #### CocoaPods
 
-Requires CocoaPods 1.5.3+
+Requires CocoaPods 1.6.1+
 
 The Geofencing SDK is a CocoaPod written in Swift. CocoaPods is a dependency manager for Cocoa projects. If you don't have CocoaPods, You can install it with the following command:
 
