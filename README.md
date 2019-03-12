@@ -17,12 +17,12 @@ The Geofencing SDK is a CocoaPod written in Swift. CocoaPods is a dependency man
 `$ sudo gem install cocoapods`
 
 To integrate the Geofencing SDK into your Xcode project, navigate to the directory that contains your project and create a new **Podfile** with `pod init` or open an existing one, then add 
-`pod 'AirMapGeofencingSDK', :git => 'https://github.com/airmap/GeofencingSDK-Swift-Example'` to the main target. Make sure to add the line `use_frameworks!`.
+`pod 'AirMapGeofencingSDK'` to the main target. Make sure to add the line `use_frameworks!`.
 
 ```ruby
 target 'MyApp' do
   use_frameworks!
-  pod 'AirMapGeofencingSDK', :git => 'https://github.com/airmap/GeofencingSDK-Swift-Example'
+  pod 'AirMapGeofencingSDK'
 end
 ```
 
@@ -122,7 +122,7 @@ If you deleted the AirMapGeofencingSDK pod and are trying to reinstall it but th
 
 `pod cache clean 'AirMapGeofencingSDK' --all`
 
-If you are installing from a local reference to the podspec you must have the vendored framework downloaded and unzipped to the corresponding path used in `s.ios.vendored_frameworks`.
+If you are installing from a local `:path` reference to the podspec you must have the vendored framework downloaded and unzipped to the corresponding path used in `s.ios.vendored_frameworks`.
 
 ## Support
 
