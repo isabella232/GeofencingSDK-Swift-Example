@@ -88,6 +88,8 @@ Each time the Geofencing Service runs, it will return a list of statuses. One fo
         APPROACHING,    // The aircraft is approaching (within 30 seconds of intersecting) the airspace 
         ENTERING,       // The aircraft is entering (within 10 seconds of intersecting) the airspace
         INTERSECTING,   // The aircraft is intersecting the airspace
+        LEAVING,        // The aircraft is leaving (within 10 seconds) the airspace (Geocage)
+        DEVIATED,       // The aircraft has left the airspace (Geocage)
         UNAVAILABLE     // The Geofencing service was unable to calculate a status due to lack of information (missing aircraft's telemetry or airspace info)
         
 If the status level is approaching or entering, the status will include proximity data. The proximity data includes a timeTo (seconds) & distanceTo (meters), which indicates when the aircraft will intersect the airspace given its current course and speed. 
