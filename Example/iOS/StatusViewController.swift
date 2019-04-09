@@ -40,10 +40,14 @@ extension StatusViewController: UITableViewDataSource {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "StatusCell") as! StatusCell
 		let status = statuses[indexPath.row]
 		let distanceTo = formatter.string(from: NSNumber(value: status.context.distanceTo)) ?? "-"
-		let timeTo = formatter.string(from: NSNumber(value: status.context.timeTo)) ?? "-"
+
+		var timeToString = "-"
+		if let timeTo = status.context.timeTo, let formattedTimeTo = formatter.string(from: NSNumber(value: timeTo)) {
+			timeToString = formattedTimeTo
+		}
 
 		cell.titleLabel.text = (status.airspaceObject as? MapboxAirspaceObject)?.name
-		cell.descriptionLabel.text = "\(distanceTo) m, \(timeTo) s"
+		cell.descriptionLabel.text = "\(distanceTo) m, \(timeToString) s"
 
 		return cell
 	}

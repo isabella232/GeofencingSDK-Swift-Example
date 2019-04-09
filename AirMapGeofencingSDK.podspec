@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   
-  version = '0.1.0.beta.1'
+  version = '0.1.0.beta.2'
 
   s.name              = 'AirMapGeofencingSDK'
   s.module_name       = 'AirMapGeofencing'

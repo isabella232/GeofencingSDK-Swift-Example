@@ -1,5 +1,5 @@
 PODS:
-  - AirMapGeofencingSDK (0.1.0.beta.1):
+  - AirMapGeofencingSDK (0.1.0.beta.2):
     - RxCocoa
     - RxSwift
     - Turf
